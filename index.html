@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/night.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides" style="text-align:left">
+			<!-- <section data-markdown>
+				<textarea data-template>
+							# DSA?
+							_____________________
+							Arturas Eidukas, Data Science Campus
+							[arturas.eidukas@ons.gov.uk](mailto:arturas.eidukas@ons.gov.uk)
+						</textarea>
+			</section>
+			<section>
+				<section>
+					<h2>OUTLINE</h2></section>
+				<section>
+					<ul>
+						<li>Who am I ?</li>
+						<li class="fragment fade-in">My DSA project</li>
+						<li class="fragment fade-in">Challenges and tips</li>
+						<li class="fragment fade-in">What I learned</li>
+						<li class="fragment fade-in">Useful Resources</li>
+						<li class="fragment fade-in"><i>Crusades</i></li>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>WHO AM I?</h2></section>
+				<section>
+					<p>BSc Economics</p>
+				</section>
+				<section>
+					<p>Did my sandwich year after my 3rd year</p>
+				</section>
+				<section>
+					<h3><u>September 2015:</u><br> AO Sandwich student</h3></section>
+				<section>
+					<p>Learned python and did <u>tons</u> of work with python</p>
+				</section>
+				<section>
+					<h3><u>Spring 2016:</u><br>HEO Economist</h3></section>
+				<section>
+					<p>Kept doing tons of python work</p>
+				</section>
+				<section>
+					<h3><u>Summer 2017:</u><br>Accelerator</h3></section>
+				<section>
+					<p>Still doing tons of python work . . .</p>
+				</section>
+				<section>
+					<h3><u>December 2017:</u><br>HEO Data Scientist</h3></section>
+				<section>
+					<p>Learned a lot of softer skills</p>
+				</section>
+				<section>
+					<p>. . . but still did a lot of python coding<br>(but now distributed).</p>
+				</section>
+				<section>
+					<h3><u>May 2017:</u><br>SEO Data Scientist</h3></section>
+				<section>
+					<p>Started working for the campus here in London.</p>
+				</section>
+				<section>
+					<p>Not many projects yet to brag about, but working on a nice NLP pipeline</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>My DSA project</h2></section>
+				<section>
+					<p>I worked in Prices at the time</p>
+				</section>
+				<section>
+					<p>The project was intended to map messy strings to not messy strings</p>
+				</section>
+				<section>
+					<h4>Price collectors notes</h4>
+					<ul>
+						<li>free hand entry</li>
+						<li>some structure</li>
+						<li>mainly for their own purposes</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Webscraped labels</h4>
+					<ul>
+						<li>more or less consistant over time</li>
+						<li>well structured</li>
+						<li>no abbreviations</li>
+					</ul>
+				</section>
+				<section>
+					<blockquote>
+						"aisle7 cereal red packaging spc K"
+					</blockquote>
+					<p style="text-align:center"> vs </p>
+					<blockquote>
+						" 'Special K' berry flavour 250g"
+					</blockquote>
+				</section>
+				<section>
+					<p>
+						My solution wasn't the greatest.<br> But I managed to get a basic ML assisted tool out that would help someone match them.
+					</p>
+				</section>
+				<section>
+					<p>
+						NOTE: No machine learning or DS experience prior to this.
+					</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Challenges and tips</h2>
+				</section>
+				<section>
+					<h3>
+						1. Data
+					</h3>
+				</section>
+				<section>
+					If you <i><b>assume</b></i> you have the data.<br> Go and <i><b>make sure</i></b> you have it.
+				</section>
+				<section>
+					Particularly if you need it outside of your<br> departments secure environment.
+				</section>
+				<section>
+					Make sure you've accounted for things like data security.
+				</section>
+				<section>
+					<h3>
+						2. Coding experience
+					</h3>
+				</section>
+				<section>
+					When I started I thought I was good enough.<br> But I still learned a lot.
+				</section>
+				<section>
+					I had to learn packages and libraries I wasn't familiar with in my normal data
+					wrangling focused job.
+				</section>
+				<section>
+					For all those who haven't done much coding before...<br><br>
+					<span style="color:orange;font-weight:bold">There is no silver bullet :( </span>
+				</section>
+				<section>
+					In my experience learning by doing works well.
+				</section>
+				<section>
+					But that is why you have mentors.<br>
+					<span class='fragment fade-in'>And this is what you're here to upskill in.</span>
+				</section>
+				<section>
+					However, they are there to support, not to do your work for you!
+				</section>
+				<section>
+					<h3>
+						3. Tedium of data massaging
+					</h3>
+				</section>
+				<section>
+					Don't know how about You, but I' don't enjoy this part of data.'
+				</section>
+				<section>
+					Yet my DSA cohort seemed to agree that they spent 80% on data wrangling and 20% doing data science!
+				</section>
+				<section>
+					The better you prepare your data beforehand the easier it is going to be to achieve your final goal.
+				</section>
+				<section>
+					However learning to wrangle data is in itself useful.
+				</section>
+				<section>
+					The better you know it, the faster you'll do it next time.
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Lets pause here for a second...</h2>
+				</section>
+				<section>
+					<h2>...and talk about the number</h2>
+				</section>
+				<section>
+					<h1 style="text-align:center">12</h1>
+					<p class="fragment fade-in" style="text-align:center">Any ideas why I'm bringing this up?<p>
+					<p class="fragment fade-in" style="text-align:center">12 is the number of working days you have<p>
+				</section>
+				<section>
+					<p>Ultimately it all boils down to time</p>
+				</section>
+				<section>
+					<iframe width="1680" height="768" src="https://www.youtube.com/embed/x9wn633vl_c?mute=1&autoplay=0&showinfo=0&controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</section>
+			</section> -->
+			<section>
+				<section>
+					<h3>4. Minimum Viable Product </h3>
+				</section>
+				<section>
+					I've borrowed the titular term from Agile project management.<br><br>
+					At least thats where I've heard it.
+				</section>
+				<section>
+					Because of the <u><b>time</b></u> issue I talked about you will be under time pressure
+					to learn any coding, stats, maths and anything else you might need in a very short period of time.
+				</section>
+				<section>
+					If you have a particularly ambitious project. You have to realise this trade off.
+					<br><br>
+					And then decide what the skeleton version or the minimum viable version of your project looks like.
+				</section>
+				<section data-background-image="giphy.gif"></section>
+				<section>
+					<blockquote>
+						<h3>If you have a proof of concept that adds value you can always build on it. Bells and whistles can wait.</h3>
+					</blockquote>
+				</section>
+			</section>
+			<section>
+				<section>
+
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function() {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
