@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html>
 
 <head>
@@ -21,6 +22,15 @@
 		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
+	<style media="screen">
+	.darken {
+		background-image:
+			linear-gradient(
+				rgba(0, 0, 0, 0.5),
+				rgba(0, 0, 0, 0.5)
+	)
+}
+	</style>
 </head>
 
 <body>
@@ -38,59 +48,123 @@
 				<section>
 					<h2>OUTLINE</h2></section>
 				<section>
+					<aside class="notes">
+						Here is the outline of my talk.<br><br>
+						I will hopefully talk about what I call missions subject to time.
+					</aside>
 					<ul>
 						<li>Who am I ?</li>
 						<li class="fragment fade-in">My DSA project</li>
 						<li class="fragment fade-in">Challenges and tips</li>
 						<li class="fragment fade-in">What I learned</li>
 						<li class="fragment fade-in">Useful Resources</li>
-						<li class="fragment fade-in"><i>Crusades</i></li>
+						<li class="fragment fade-in"><i>Missions</i></li>
 				</section>
 			</section>
 			<section>
 				<section>
 					<h2>WHO AM I?</h2></section>
+					<aside class="notes">
+						So who am I? <br><br>
+					</aside>
 				<section>
 					<p>BSc Economics</p>
+					<aside class="notes">
+						I did an Economics degree here in the UK. <br>
+						So I haven't really been that much involved in DS <br>
+						Modeling and the maths focused more on economic practicalities <br>
+						Meaning I had to start from the bottom and now I'm here.
+					</aside>
 				</section>
 				<section>
 					<p>Did my sandwich year after my 3rd year</p>
+					<aside class="notes">
+						I was an odd case when it came to placements as I did my sandwich year on top of my degree.<br><br>
+						Making it less of a traditional sandwich.
+					</aside>
 				</section>
 				<section>
 					<h3><u>September 2015:</u><br> AO Sandwich student</h3></section>
+					<aside class="notes">
+						My first job in the civil services was this placement. <br><br>
+						ONS was one of my choices when I applied to GES and I got placed in the prices divison
+					</aside>
 				<section>
 					<p>Learned python and did <u>tons</u> of work with python</p>
+					<aside class="notes">
+						I will say I did tons of python quite a bit here, but really it was a normal amount that an analyst can expect to do. <br><br>
+						Mind you the learning took me ages as python in the ONS was fairly a new idea, but it was gaining momentum. <br><br>
+						We didn't have infrastructure and I had to learn quite a bit at home, but that was my own personal goals not something ONS insisted on me doing. <br><br>
+						People were concerned I did python at home at the expense of my wellbeing whereas I actually really liked it.
+					</aside>
 				</section>
 				<section>
-					<h3><u>Spring 2016:</u><br>HEO Economist</h3></section>
+					<h3><u>Spring 2016:</u><br>HEO Economist</h3>
+					<aside class="notes">
+						So midway through my placement I applied and got an HEO job. <br><br>
+						That said, I sort of tried to keep as much python work involvement as I could even as an economist.
+					</aside>
+				</section>
 				<section>
 					<p>Kept doing tons of python work</p>
+					<aside class="notes">
+						By this point I've started to look like the python guru of the branch/division although I was way off <br><br>
+						I also insisted that we start enticing people to upskill themselves in the division with regards to programming <br><br>
+						And started providing introductions to python / circulating resources and fostering interest
+					</aside>
 				</section>
 				<section>
-					<h3><u>Summer 2017:</u><br>Accelerator</h3></section>
+					<h3><u>Summer 2017:</u><br>Accelerator</h3>
+					<aside class="notes">
+						I will talk about my project a little bit in future slides, but suffice to say I had a ton of fun on the DSA.
+					</aside>
+				</section>
 				<section>
 					<p>Still doing tons of python work . . .</p>
 				</section>
 				<section>
 					<h3><u>December 2017:</u><br>HEO Data Scientist</h3></section>
+					<aside class="notes">
+						Most of what I learned to get it was from DSA. <br><br>
+						And I am pretty sure I couldn't have gotten this job without it. <br><br>
+						However, I will save you some of the retrospective embarassment I felt when remembering my answers in the interview by providing with an incredible resource (particularly to those using python)
+					</aside>
 				<section>
 					<p>Learned a lot of softer skills</p>
+					<aside class="notes">
+						Things like how to get things done.<br><br>
+						Speak their language and understand their concerns <br><br>
+						Although technical skills are important, building working relationships (particularly with tech people) is also crucial. <br><br>
+						I had a list of fixers <br><br>
+					</aside>
 				</section>
 				<section>
 					<p>. . . but still did a lot of python coding<br>(but now distributed).</p>
+					<aside class="notes">
+						I had to work with a different python beast called pyspark. <br><br>
+						Won't go into detail but think - how do you make multiple smaller computers do the heavy lifting one large computer does. <br><br>
+						If anyone's interested in this come round I'll give you more info.
+					</aside>
 				</section>
 				<section>
-					<h3><u>May 2017:</u><br>SEO Data Scientist</h3></section>
+					<h3><u>May 2017:</u><br>SEO Data Scientist</h3>
+				</section>
 				<section>
 					<p>Started working for the campus here in London.</p>
 				</section>
 				<section>
 					<p>Not many projects yet to brag about, but working on a nice NLP pipeline</p>
+					<aside class="notes">
+						Basically using messy strings to find some structure in the data by turning them into numbers representing their context.
+					</aside>
 				</section>
 			</section>
 			<section>
 				<section>
 					<h2>My DSA project</h2></section>
+					<aside class="notes">
+						I don't want to focus on the technicalities of my project too much, but will describe it for the sake of context.
+					</aside>
 				<section>
 					<p>I worked in Prices at the time</p>
 				</section>
@@ -126,6 +200,9 @@
 					<p>
 						My solution wasn't the greatest.<br> But I managed to get a basic ML assisted tool out that would help someone match them.
 					</p>
+					<aside class="notes">
+						And I felt good about it, given that the time constraints were so prevelant and given the amount of things I've learned.
+					</aside>
 				</section>
 				<section>
 					<p>
@@ -136,20 +213,34 @@
 			<section>
 				<section>
 					<h2>Challenges and tips</h2>
+					<aside class="notes">
+						Now this is the meat and potatoes so to speak of what I really want to highlight to you. <br><br>
+						By limiting the challenges and following the tips you most likely will have a better shot of getting more out of the DSA.
+					</aside>
 				</section>
 				<section>
 					<h3>
 						1. Data
 					</h3>
+					<aside class="notes">
+						Lets talk about data.
+					</aside>
 				</section>
 				<section>
 					If you <i><b>assume</b></i> you have the data.<br> Go and <i><b>make sure</i></b> you have it.
 				</section>
 				<section>
 					Particularly if you need it outside of your<br> departments secure environment.
+					<aside class="notes">
+						Think: when I come in on my first Thursday, will I be able to open this CSV/json/excel file and jump right into work
+					</aside>
 				</section>
 				<section>
 					Make sure you've accounted for things like data security.
+					<aside class="notes">
+						And data Ethics. Sure, the technology is there to webscrape but how will that be perceived. <br><br>
+						Perhaps I am overly cautious here. But as a civil service data scientist you need to think about these things
+					</aside>
 				</section>
 				<section>
 					<h3>
@@ -157,7 +248,11 @@
 					</h3>
 				</section>
 				<section>
-					When I started I thought I was good enough.<br> But I still learned a lot.
+					When I started I thought I was good enough.<br>
+					But I still learned a lot.
+					<aside class="notes">
+						By good enough I mean, I had confidence that I won't learn much on the coding side.
+					</aside>
 				</section>
 				<section>
 					I had to learn packages and libraries I wasn't familiar with in my normal data
@@ -166,13 +261,21 @@
 				<section>
 					For all those who haven't done much coding before...<br><br>
 					<span style="color:orange;font-weight:bold">There is no silver bullet :( </span>
+					<aside class="notes">
+						Similarly to the any normal language, you will not able able to speak it without practice. <br><br>
+						I started by learning the alphabet and grammar, and I am still learning how to write poetry.
+					</aside>
 				</section>
 				<section>
 					In my experience learning by doing works well.
+					<aside class="notes">
+						Who here loves puzzles? Games, jigsaw, sudoku anything? <br><br>
+						Well basically all those "UGH can't find the solution" and "YES I DID IT. IT WORKS" moments are very pertinent to programming
+					</aside>
 				</section>
 				<section>
-					But that is why you have mentors.<br>
-					<span class='fragment fade-in'>And this is what you're here to upskill in.</span>
+					Thats why you have mentors. A luxury I didn't have in my sandwich student days!<br>
+					<span class='fragment fade-in'>So use them!</span>
 				</section>
 				<section>
 					However, they are there to support, not to do your work for you!
@@ -184,15 +287,23 @@
 				</section>
 				<section>
 					Don't know how about You, but I' don't enjoy this part of data.'
+					<aside class="notes">
+						In my head, the world of data science was always more about drawing insight from data using computer science and maths. <br><br>
+						Granular and headache inducing preprocessing of was never something I aspired to.
+					</aside>
 				</section>
 				<section>
-					Yet my DSA cohort seemed to agree that they spent 80% on data wrangling and 20% doing data science!
+					Yet my DSA cohort seemed to agree that they spent 80% on data wrangling and 20% doing all the 'fun stuff'!
 				</section>
 				<section>
 					The better you prepare your data beforehand the easier it is going to be to achieve your final goal.
 				</section>
 				<section>
 					However learning to wrangle data is in itself useful.
+					<aside class="notes">
+						I doubt that any of you will have a perfect dataset. And ultimately the 80% of work is most likely what you will use more in your daily job. <br>
+						And this is not bad, because ... (next slide)
+					</aside>
 				</section>
 				<section>
 					The better you know it, the faster you'll do it next time.
@@ -201,6 +312,9 @@
 			<section>
 				<section>
 					<h2>Lets pause here for a second...</h2>
+					<aside class="notes">
+						Look at watch for one second
+					</aside>
 				</section>
 				<section>
 					<h2>...and talk about the number</h2>
@@ -209,41 +323,99 @@
 					<h1 style="text-align:center">12</h1>
 					<p class="fragment fade-in" style="text-align:center">Any ideas why I'm bringing this up?<p>
 					<p class="fragment fade-in" style="text-align:center">12 is the number of working days you have<p>
+					<aside class="notes">
+						I mean I would be suprised if anyone can spot how 12 relates to the DSA.
+					</aside>
 				</section>
 				<section>
 					<p>Ultimately it all boils down to time</p>
 				</section>
 				<section>
 					<iframe width="1680" height="768" src="https://www.youtube.com/embed/x9wn633vl_c?mute=1&autoplay=0&showinfo=0&controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<aside class="notes">
+						I don't think anyone needs a reminder here about the concept of time and quality trade off. <br><br>
+						But ultimately I don't think anyone expects a 10 minute Spider-man out of you given time constraints. <br><br>
+						So your goal is to get a 1 minute spider-man that you can always improve.
+					</aside>
 				</section>
 			</section>
 			<section>
 				<section>
-					<h3>4. Minimum Viable Product </h3>
+					<h3>4. Focus on getting A to B </h3>
 				</section>
 				<section>
-					I've borrowed the titular term from Agile project management.<br><br>
-					At least thats where I've heard it.
+					Keeping your eyes on the prize and not getting too distracted is hard.<br><br>
+					Focus on getting a <b><u>working pipeline</u></b> going first and record any areas to improve upon as you go.
+					<aside class="notes">
+						I am not saying this to stop ambition. But with my limited experience, in the DSA I wanted to do a lot of things and got sidetracked to other fun features quite easily.<br>
+						That second point is spot on what I would recommend. If you can come back to your business area saying: 'My pipeline can't handle JSON files yet, but heres how it processes CSVs to completion' <br>
+						You can get much more buy in.
 				</section>
 				<section>
-					Because of the <u><b>time</b></u> issue I talked about you will be under time pressure
+					Because of the <u><b>time</b></u> issue you will be under time pressure
 					to learn any coding, stats, maths and anything else you might need in a very short period of time.
 				</section>
 				<section>
 					If you have a particularly ambitious project. You have to realise this trade off.
 					<br><br>
-					And then decide what the skeleton version or the minimum viable version of your project looks like.
+					And then decide what the skeleton version of your project looks like.
 				</section>
-				<section data-background-image="giphy.gif"></section>
+				<section data-background-image="giphy.gif">
+				<aside class="notes">
+					Which is what I thank my mentors for. As they did this on our first ever catch up. Sort of crushed my ambitions a little. <br><br>
+					But ultimately this meant I got to learn more and also deliver my skeleton that we could build upon later.
+				</aside>
+				</section>
 				<section>
 					<blockquote>
-						<h3>If you have a proof of concept that adds value you can always build on it. Bells and whistles can wait.</h3>
+						<h3>If you have a proof of concept that
+							  <span style="color:orange">adds value</span>
+								you can always build on it. <br><br>
+								<span style="color:orange">Bells and whistles can wait.</span></h3>
 					</blockquote>
 				</section>
 			</section>
 			<section>
 				<section>
-
+					<h2>What I learned</h2>
+				</section>
+				<section>
+					Well, like I said I had 0 experience in ML going in.<br><br>
+					And my perception was that in practice doing ML was rocket science 🚀
+				</section>
+				<section style="text-align:center">
+					<img src="pypiprojects.png">
+					<img src="stack-overflow.png">
+					<aside class="notes">
+						But in reality it often is the case with open source software that whatever you are trying to do is already been done!<br><br>
+						And if some of you have done coding it is common practice to reuse others code and use other peoples packages.
+					</aside>
+				</section>
+				<section>
+					Now the same goes for Machine Learning/Web App making/Data Wrangling packages. <br>
+				</section>
+				<section>
+					My fear was that I will have to code in a neural network from scratch using MATHS! <br><br>
+					But that isn't the reality at all.
+					<aside class="notes">
+						You can easily come in and after some preprocesing shove in your data into a ML model <br><br>
+						And due to the way people have built these modules you can swap one model for another almost instantly
+					</aside>
+				</section>
+				<section style="text-align:center">
+					<img src="xkcd.png">
+					<aside class="notes">
+						However, I think it is still important to understand what the package is doing and how the algorithm works to provide robust analysis. <br><br>
+						And this is most likely the more difficult bit of being a Data Scientist and doign the DSA.
+					</aside>
+				</section>
+				<section data-background-image="happy.gif">
+					<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; padding-bottom: 0px;">
+						<p>Ultimately the DSA demystified ML learning to me, and once I saw predictions come out of the end my ML pipeline I was extremely excited. <br><br></p>
+					</div>
+					<aside class="notes">
+						It made me feel I could do it (not that the predictions were any good)
+					</aside>
 				</section>
 			</section>
 		</div>
