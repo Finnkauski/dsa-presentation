@@ -10,9 +10,11 @@
 
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/night.css">
-
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
 	<!-- Printing and PDF exports -->
 	<script>
@@ -29,20 +31,26 @@
 				rgba(0, 0, 0, 0.5),
 				rgba(0, 0, 0, 0.5)
 	)
+
 }
+	.reveal section h1,
+	.reveal section h2,
+	.reveal section h3,
+	.reveal section h4,
+	.reveal section {
+		font-family: 'Ubuntu', sans-serif;
+	}
 	</style>
 </head>
 
 <body>
 	<div class="reveal">
 		<div class="slides" style="text-align:left">
-			<section data-markdown>
-				<textarea data-template>
-							# DSA?
-							_____________________
-							Arturas Eidukas, Data Science Campus
-							[arturas.eidukas@ons.gov.uk](mailto:arturas.eidukas@ons.gov.uk)
-						</textarea>
+			<section>
+					<h1>DSA?</h1>
+					<p>Arturas Eidukas, Data Science Campus</p>
+					<a href="mailto:arturas.eidukas@ons.gov.uk">arturas.eidukas@ons.gov.uk</a>
+				</textarea>
 			</section>
 			<section>
 				<section>
@@ -50,7 +58,7 @@
 				<section>
 					<aside class="notes">
 						Here is the outline of my talk.<br><br>
-						I will hopefully talk about what I call missions subject to time.
+						I will hopefully talk about change.
 					</aside>
 					<ul>
 						<li>Who am I ?</li>
@@ -58,7 +66,7 @@
 						<li class="fragment fade-in">Challenges and tips</li>
 						<li class="fragment fade-in">What I learned</li>
 						<li class="fragment fade-in">Useful Resources</li>
-						<li class="fragment fade-in"><i>Missions</i></li>
+						<li class="fragment fade-in"><i>Change</i></li>
 				</section>
 			</section>
 			<section>
@@ -212,7 +220,7 @@
 			</section>
 			<section>
 				<section>
-					<h2>Challenges and tips</h2>
+					<h2>CHALLENGES AND TIPS</h2>
 					<aside class="notes">
 						Now this is the meat and potatoes so to speak of what I really want to highlight to you. <br><br>
 						By limiting the challenges and following the tips you most likely will have a better shot of getting more out of the DSA.
@@ -377,7 +385,7 @@
 			</section>
 			<section>
 				<section>
-					<h2>What I learned</h2>
+					<h2>WHAT I LEARNED</h2>
 				</section>
 				<section>
 					Well, like I said I had 0 experience in ML going in.<br><br>
@@ -420,7 +428,7 @@
 			</section>
 			<section>
 					<section>
-						<h2>Useful Resources</h2>
+						<h2>RESOURCES</h2>
 						<aside class="notes">
 							<p>I am a python focused person, so these resources are going to reflect that.</p>
 						</aside>
@@ -471,6 +479,7 @@
 							<li><a href="www.stackoverflow.com">Stackoverflow</a></li>
 							<li><a href="www.coursera.org">Coursera</a></li>
 							<li><a href="www.udemy.com">udemy</a></li>
+							<li><a href="www.datacamp.com">DataCamp</a></li>
 							<li><a href="www.datacamp.com/community/data-science-cheatsheets">Cheatsheets</a></li>
 							<li><p>pyCon/pyData videos/general Youtube</p></li>
 							<li><p>Official Documentation</p></li>
@@ -483,12 +492,77 @@
 								Udemy is a tricky one, they have tons of courses. Its paid, but they rack up the prices and then do sort of fake discounts. <br>
 									I could recommend quite a few Deep learning ones from here. <br>
 								Datacamp - paid with some free courses (basics). ONS has seats you can get, check if any of your departments would do something like this <br>
+								Cheatsheets - really good quick references. I used to have a bunch on spark printed out and taped to the wall next to my desk. <br>
 								pyCon/pyData - Really good videos from various events and conferences. Skill level varies, but I learned a lot about the more expert features.<br>
 								Official Documentation - most famous packages will have tons of documentation with examples. Also things like python pandas has a mini-tutorial section <br>
 							</aside>
 						</ul>
 					</section>
-			</section>
+				</section>
+				<section>
+						<section>
+							<h2>CHANGE</h2>
+							<aside class="notes">
+								Lets talk about change.
+								Hope this will not sound too preachy.
+							</aside>
+						</section>
+						<section>
+							<blockquote>
+								Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. <...> Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do. <br><br>
+
+								- Rob Siltanen
+							</blockquote>
+							<aside class="notes">
+								The first one is very provoking and very grandiose sounding.
+							</aside>
+						</section>
+						<section>
+							<blockquote>
+								Change will not come if we wait for some other person, or if we wait for some other time. We are the ones we've been waiting for. We are the change that we seek.<br><br>
+
+								- Barack Obama
+							</blockquote>
+							<aside class="notes">
+								This one is a little more on point, a little more condenced.
+								So by now you're thinking where is he going with this?
+							</aside>
+						</section>
+						<section>
+							Don't forget all that you learned in the DSA. <br><br>
+							And remember all the challenges you had to face.
+							<aside class="notes">
+								I think quite often people, including me come back to the business area and do not convey enough of this to them.<br>
+							</aside>
+						</section>
+						<section>
+							If you had trouble with IT/Data it will also be a problem for someone else. <br><br>
+
+							Think about how you can <span style="color:red">change</span> this.
+							<aside class="notes">
+								See if there are any quick wins.
+								Things like:
+								<ul>
+									<li>Data formats - can the storage of data be better for future DS</li>
+									<li>IT - could I use any packages I needed on the Department IT and will having them add value?</li>
+									<li>Would my coleagues benefit from knowing Python R etc and how can I promote this.</li>
+								</ul>
+							</aside>
+						</section>
+						<section>
+							<blockquote>
+								Be the change that you wish to see in the world.<br><br>
+
+								- Mahatma Gandhi
+							</blockquote>
+							<aside class="notes">
+								This one summarises my message.
+							</aside>
+						</section>
+				</section>
+				<section data-background-image="questions2.gif">
+
+				</section>
 		</div>
 	</div>
 
@@ -500,6 +574,10 @@
 		// - https://github.com/hakimel/reveal.js#configuration
 		// - https://github.com/hakimel/reveal.js#dependencies
 		Reveal.initialize({
+			controlsTutorial: false,
+			controlsLayout: "bottom-right",
+			transition: "convex",
+			transitionSpeed: "fast",
 			dependencies: [{
 					src: 'plugin/markdown/marked.js'
 				},
