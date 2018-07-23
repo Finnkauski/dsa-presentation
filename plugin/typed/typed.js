@@ -10,6 +10,7 @@ function callTypedJs(){
 	var typed = new Typed('#typed', {
 		stringsElement: '#typed-strings',
 		startDelay: 500,
+		loop:false,
 		typeSpeed: 50,
 		backSpeed: 35
 	});
