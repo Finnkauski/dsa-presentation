@@ -48,10 +48,17 @@
 	<div class="reveal">
 		<div class="slides" style="text-align:left">
 			<section>
-					<h1>DSA?</h1>
+				<div id="typed-strings">
+				<p>Data Science Accelerator?</p>
+				<p>DSA?</p>
+				</div>
+				<h3><span id="typed" class='h1 center'></span></h3>
+				<p>Arturas Eidukas, Data Science Campus</p>
+				<a href="mailto:arturas.eidukas@ons.gov.uk">arturas.eidukas@ons.gov.uk</a>
+			</section>
+			<section>
 					<p>Arturas Eidukas, Data Science Campus</p>
 					<a href="mailto:arturas.eidukas@ons.gov.uk">arturas.eidukas@ons.gov.uk</a>
-				</textarea>
 			</section>
 			<section>
 				<section>
@@ -339,6 +346,7 @@
 				<section>
 					<p>Ultimately it all boils down to time</p>
 				</section>
+				<section data-background-image="images/deadline.gif"></section>
 				<section>
 					<iframe width="1680" height="768" src="https://www.youtube.com/embed/x9wn633vl_c?mute=1&autoplay=0&showinfo=0&controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					<aside class="notes">
@@ -561,6 +569,12 @@
 							</aside>
 						</section>
 				</section>
+				<section>
+					And if anyone is interested in what I used to make this presentation,
+					come and have a chat to me.
+
+					(or Google: RevealJS)
+				</section>
 				<section data-background-image="images/questions2.gif">
 
 				</section>
@@ -588,6 +602,10 @@
 				{
 					src: 'plugin/notes/notes.js',
 					async: true
+				},
+				{ src: 'plugin/typed/typed.js',
+				 	async: false,
+					callback: function() { callTypedJs(); }
 				},
 				{
 					src: 'plugin/highlight/highlight.js',
